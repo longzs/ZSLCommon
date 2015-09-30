@@ -41,7 +41,6 @@
 		FC3F03BA1B90018A007EB2DE /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F035F1B90018A007EB2DE /* AFURLSessionManager.h */; };
 		FC3F03BB1B90018A007EB2DE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03601B90018A007EB2DE /* AFURLSessionManager.m */; };
 		FC3F03BC1B90018A007EB2DE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FC3F03611B90018A007EB2DE /* LICENSE */; };
-		FC3F03BD1B90018A007EB2DE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03621B90018A007EB2DE /* README.md */; };
 		FC3F03BE1B90018A007EB2DE /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03641B90018A007EB2DE /* AFNetworkActivityIndicatorManager.h */; };
 		FC3F03BF1B90018A007EB2DE /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03651B90018A007EB2DE /* AFNetworkActivityIndicatorManager.m */; };
 		FC3F03C01B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03661B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.h */; };
@@ -97,11 +96,9 @@
 		FC3F03F21B90018A007EB2DE /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03A11B90018A007EB2DE /* JSONValueTransformer.h */; };
 		FC3F03F31B90018A007EB2DE /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03A21B90018A007EB2DE /* JSONValueTransformer.m */; };
 		FC3F03F41B90018A007EB2DE /* LICENSE_jsonmodel.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC3F03A31B90018A007EB2DE /* LICENSE_jsonmodel.txt */; };
-		FC3F03F51B90018A007EB2DE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03A41B90018A007EB2DE /* README.md */; };
 		FC3F03F61B90018A007EB2DE /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03A61B90018A007EB2DE /* RegexKitLite.h */; };
 		FC3F03F71B90018A007EB2DE /* RegexKitLite.html in Resources */ = {isa = PBXBuildFile; fileRef = FC3F03A71B90018A007EB2DE /* RegexKitLite.html */; };
 		FC3F03F81B90018A007EB2DE /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03A81B90018A007EB2DE /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FC3F03FA1B9002D5007EB2DE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3F03F91B9002D5007EB2DE /* libsqlite3.dylib */; };
 		FC3F04001B900515007EB2DE /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03FE1B900515007EB2DE /* NSDate+TKCategory.h */; };
 		FC3F04011B900515007EB2DE /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03FF1B900515007EB2DE /* NSDate+TKCategory.m */; };
 		FC3F04041B90051E007EB2DE /* NSData+PXTAES.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F04021B90051E007EB2DE /* NSData+PXTAES.h */; };
@@ -113,9 +110,20 @@
 		FC78C7601B870A2900536535 /* ZSLCommonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = FC78C75F1B870A2900536535 /* ZSLCommonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC78C7661B870A2900536535 /* ZSLCommonLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78C75A1B870A2900536535 /* ZSLCommonLib.framework */; };
 		FC78C76D1B870A2900536535 /* ZSLCommonLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78C76C1B870A2900536535 /* ZSLCommonLibTests.m */; };
+		FC91394A1BBA872A00B4C64A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3F03F91B9002D5007EB2DE /* libsqlite3.dylib */; };
+		FC91394D1BBA90DF00B4C64A /* ReqBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FC91394B1BBA90DF00B4C64A /* ReqBaseModel.h */; };
+		FC91394E1BBA90DF00B4C64A /* ReqBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC91394C1BBA90DF00B4C64A /* ReqBaseModel.m */; };
+		FC9139521BBA915100B4C64A /* HttpOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9139501BBA915100B4C64A /* HttpOperation.h */; };
+		FC9139531BBA915100B4C64A /* HttpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9139511BBA915100B4C64A /* HttpOperation.m */; };
+		FC9139561BBA91F100B4C64A /* ZSLHttpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9139541BBA91F100B4C64A /* ZSLHttpManager.h */; };
+		FC9139571BBA91F100B4C64A /* ZSLHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9139551BBA91F100B4C64A /* ZSLHttpManager.m */; };
 		FC9E3B0B1B8F0C0A00D67A1A /* CommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9E3B0A1B8F0C0A00D67A1A /* CommonMacro.h */; };
 		FC9E3B111B8F163C00D67A1A /* BaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9E3B0F1B8F163C00D67A1A /* BaseManager.h */; };
 		FC9E3B121B8F163C00D67A1A /* BaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9E3B101B8F163C00D67A1A /* BaseManager.m */; };
+		FCD1F2031BBB860C005FDB48 /* RspBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FCD1F2011BBB860C005FDB48 /* RspBaseModel.h */; };
+		FCD1F2041BBB860C005FDB48 /* RspBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1F2021BBB860C005FDB48 /* RspBaseModel.m */; };
+		FCD1F2071BBBBCDB005FDB48 /* ReqUploadModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FCD1F2051BBBBCDB005FDB48 /* ReqUploadModel.h */; };
+		FCD1F2081BBBBCDB005FDB48 /* ReqUploadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1F2061BBBBCDB005FDB48 /* ReqUploadModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,7 +157,6 @@
 		FC3F035F1B90018A007EB2DE /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		FC3F03601B90018A007EB2DE /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		FC3F03611B90018A007EB2DE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FC3F03621B90018A007EB2DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FC3F03641B90018A007EB2DE /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		FC3F03651B90018A007EB2DE /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		FC3F03661B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -205,7 +212,6 @@
 		FC3F03A11B90018A007EB2DE /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		FC3F03A21B90018A007EB2DE /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		FC3F03A31B90018A007EB2DE /* LICENSE_jsonmodel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_jsonmodel.txt; sourceTree = "<group>"; };
-		FC3F03A41B90018A007EB2DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FC3F03A61B90018A007EB2DE /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		FC3F03A71B90018A007EB2DE /* RegexKitLite.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegexKitLite.html; sourceTree = "<group>"; };
 		FC3F03A81B90018A007EB2DE /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
@@ -225,10 +231,20 @@
 		FC78C7651B870A2900536535 /* ZSLCommonLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSLCommonLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC78C76B1B870A2900536535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC78C76C1B870A2900536535 /* ZSLCommonLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSLCommonLibTests.m; sourceTree = "<group>"; };
+		FC91394B1BBA90DF00B4C64A /* ReqBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReqBaseModel.h; sourceTree = "<group>"; };
+		FC91394C1BBA90DF00B4C64A /* ReqBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReqBaseModel.m; sourceTree = "<group>"; };
+		FC9139501BBA915100B4C64A /* HttpOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpOperation.h; sourceTree = "<group>"; };
+		FC9139511BBA915100B4C64A /* HttpOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpOperation.m; sourceTree = "<group>"; };
+		FC9139541BBA91F100B4C64A /* ZSLHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSLHttpManager.h; sourceTree = "<group>"; };
+		FC9139551BBA91F100B4C64A /* ZSLHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSLHttpManager.m; sourceTree = "<group>"; };
 		FC9E3B0A1B8F0C0A00D67A1A /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		FC9E3B0E1B8F0E6800D67A1A /* ZSLLibMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSLLibMacro.h; sourceTree = "<group>"; };
 		FC9E3B0F1B8F163C00D67A1A /* BaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseManager.h; sourceTree = "<group>"; };
 		FC9E3B101B8F163C00D67A1A /* BaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseManager.m; sourceTree = "<group>"; };
+		FCD1F2011BBB860C005FDB48 /* RspBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RspBaseModel.h; sourceTree = "<group>"; };
+		FCD1F2021BBB860C005FDB48 /* RspBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RspBaseModel.m; sourceTree = "<group>"; };
+		FCD1F2051BBBBCDB005FDB48 /* ReqUploadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReqUploadModel.h; sourceTree = "<group>"; };
+		FCD1F2061BBBBCDB005FDB48 /* ReqUploadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReqUploadModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +252,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3F03FA1B9002D5007EB2DE /* libsqlite3.dylib in Frameworks */,
+				FC91394A1BBA872A00B4C64A /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +272,6 @@
 			children = (
 				FC3F034D1B90018A007EB2DE /* AFNetworking */,
 				FC3F03611B90018A007EB2DE /* LICENSE */,
-				FC3F03621B90018A007EB2DE /* README.md */,
 				FC3F03631B90018A007EB2DE /* UIKit+AFNetworking */,
 			);
 			path = AFNetworking;
@@ -354,7 +369,6 @@
 			children = (
 				FC3F03891B90018A007EB2DE /* JSONModel */,
 				FC3F03A31B90018A007EB2DE /* LICENSE_jsonmodel.txt */,
-				FC3F03A41B90018A007EB2DE /* README.md */,
 			);
 			path = JSONModel;
 			sourceTree = "<group>";
@@ -518,6 +532,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FC91394F1BBA910A00B4C64A /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1F2051BBBBCDB005FDB48 /* ReqUploadModel.h */,
+				FCD1F2061BBBBCDB005FDB48 /* ReqUploadModel.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		FC9E3B001B8F06D700D67A1A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,7 +577,10 @@
 		FC9E3B031B8F06D700D67A1A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC91394F1BBA910A00B4C64A /* Request */,
 				FC9E3B041B8F06D700D67A1A /* NetResponse */,
+				FC91394B1BBA90DF00B4C64A /* ReqBaseModel.h */,
+				FC91394C1BBA90DF00B4C64A /* ReqBaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -562,6 +588,8 @@
 		FC9E3B041B8F06D700D67A1A /* NetResponse */ = {
 			isa = PBXGroup;
 			children = (
+				FCD1F2011BBB860C005FDB48 /* RspBaseModel.h */,
+				FCD1F2021BBB860C005FDB48 /* RspBaseModel.m */,
 			);
 			path = NetResponse;
 			sourceTree = "<group>";
@@ -578,6 +606,10 @@
 		FC9E3B061B8F06D700D67A1A /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				FC9139501BBA915100B4C64A /* HttpOperation.h */,
+				FC9139511BBA915100B4C64A /* HttpOperation.m */,
+				FC9139541BBA91F100B4C64A /* ZSLHttpManager.h */,
+				FC9139551BBA91F100B4C64A /* ZSLHttpManager.m */,
 			);
 			path = HTTP;
 			sourceTree = "<group>";
@@ -620,6 +652,8 @@
 				FC3F03D11B90018A007EB2DE /* FMDatabaseAdditions.h in Headers */,
 				FC3F03C41B90018A007EB2DE /* UIButton+AFNetworking.h in Headers */,
 				FC3F03B21B90018A007EB2DE /* AFSecurityPolicy.h in Headers */,
+				FC91394D1BBA90DF00B4C64A /* ReqBaseModel.h in Headers */,
+				FCD1F2031BBB860C005FDB48 /* RspBaseModel.h in Headers */,
 				FC3F03F01B90018A007EB2DE /* JSONKeyMapper.h in Headers */,
 				FC3F04041B90051E007EB2DE /* NSData+PXTAES.h in Headers */,
 				FC3F03AF1B90018A007EB2DE /* AFNetworking.h in Headers */,
@@ -645,10 +679,13 @@
 				FC3F03C21B90018A007EB2DE /* UIAlertView+AFNetworking.h in Headers */,
 				FC3F03E91B90018A007EB2DE /* JSONModelLib.h in Headers */,
 				FC3F03CF1B90018A007EB2DE /* FMDatabase.h in Headers */,
+				FC9139561BBA91F100B4C64A /* ZSLHttpManager.h in Headers */,
 				FC3F03EC1B90018A007EB2DE /* JSONHTTPClient.h in Headers */,
 				FC3F03DC1B90018A007EB2DE /* GTMDefines.h in Headers */,
 				FC3F03C01B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.h in Headers */,
 				FC3F03E11B90018A007EB2DE /* JSONModelArray.h in Headers */,
+				FCD1F2071BBBBCDB005FDB48 /* ReqUploadModel.h in Headers */,
+				FC9139521BBA915100B4C64A /* HttpOperation.h in Headers */,
 				FC3F03E51B90018A007EB2DE /* JSONModelError.h in Headers */,
 				FC3F03D71B90018A007EB2DE /* FMDB.h in Headers */,
 				FC3F04001B900515007EB2DE /* NSDate+TKCategory.h in Headers */,
@@ -673,6 +710,7 @@
 				FC78C7561B870A2900536535 /* Frameworks */,
 				FC78C7571B870A2900536535 /* Headers */,
 				FC78C7581B870A2900536535 /* Resources */,
+				FC9107F51BB8ECBF00C1C40F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -774,6 +812,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\nrm -r \"${WRK_DIR}\"\nopen \"${INSTALL_DIR}\"";
 		};
+		FC9107F51BB8ECBF00C1C40F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION == Release ]; then\necho \"Bumping build number...\"\nplist=${PROJECT_DIR}/${INFOPLIST_FILE}\n\n#increment the build number (ie 115 to 116)\nbuildnum=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${plist}\")\nif [[ \"${buildnum}\" == \"\" ]]; then\necho \"No build number in $plist\"\nexit 2\nfi\n\nnewbuildnum=$(expr $buildnum + 1)\n/usr/libexec/Plistbuddy -c \"Set CFBundleVersion $newbuildnum\" \"${plist}\"\necho \"Bumped build number to $buildnum\"\n\nappversion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${plist}\")\necho \"app $newbuildnum\"\nif [[ \"${appversion}\" == \"\" ]]; then\nexit 2\nfi\necho \"old app version $appversion\"\n\noldappversionfirst=${appversion:0:5}\nnewappversionsecondone=${appversion:5:1}\noldappversionsecondtwo=${appversion:6:1}\nnewappversionsecondtwo=$(expr $oldappversionsecondtwo + 1)\n\nif [[ $newappversionsecondtwo -ge 10 ]]; then\nnewappversionsecondone=$(expr $newappversionsecondone + 1)\nnewappversionsecondtwo=$(expr $newappversionsecondtwo - 10)\nfi\n\nnewappversion=$oldappversionfirst$newappversionsecondone$newappversionsecondtwo\necho \"oldappversionfirst $oldappversionfirst\"\necho \"newappversionsecondone $newappversionsecondone\"\necho \"newappversionsecondtwo $newappversionsecondtwo\"\necho \"new app version $newappversion\"\nif [[ \"${newappversion}\" == \"\" ]]; then\nexit 2\nfi\n/usr/libexec/Plistbuddy -c \"Set CFBundleShortVersionString $newappversion\" \"${plist}\"\nelse\necho $CONFIGURATION \" build - Not bumping build number.\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -791,22 +842,27 @@
 				FC3F03DE1B90018A007EB2DE /* JSONKit.m in Sources */,
 				FC3F04091B900529007EB2DE /* NSString+NetToolSet.m in Sources */,
 				FC3F03D91B90018A007EB2DE /* FMResultSet.m in Sources */,
+				FCD1F2041BBB860C005FDB48 /* RspBaseModel.m in Sources */,
 				FC3F03D21B90018A007EB2DE /* FMDatabaseAdditions.m in Sources */,
 				FC3F03ED1B90018A007EB2DE /* JSONHTTPClient.m in Sources */,
+				FCD1F2081BBBBCDB005FDB48 /* ReqUploadModel.m in Sources */,
 				FC3F03F31B90018A007EB2DE /* JSONValueTransformer.m in Sources */,
 				FC9E3B121B8F163C00D67A1A /* BaseManager.m in Sources */,
 				FC3F03B11B90018A007EB2DE /* AFNetworkReachabilityManager.m in Sources */,
 				FC3F03BB1B90018A007EB2DE /* AFURLSessionManager.m in Sources */,
 				FC3F03AC1B90018A007EB2DE /* AFHTTPRequestOperationManager.m in Sources */,
 				FC3F03E81B90018A007EB2DE /* NSArray+JSONModel.m in Sources */,
+				FC9139571BBA91F100B4C64A /* ZSLHttpManager.m in Sources */,
 				FC3F03E21B90018A007EB2DE /* JSONModelArray.m in Sources */,
 				FC3F03DB1B90018A007EB2DE /* GTMBase64.m in Sources */,
 				FC3F03CA1B90018A007EB2DE /* UIProgressView+AFNetworking.m in Sources */,
 				FC3F03D61B90018A007EB2DE /* FMDatabaseQueue.m in Sources */,
+				FC91394E1BBA90DF00B4C64A /* ReqBaseModel.m in Sources */,
 				FC3F03EF1B90018A007EB2DE /* JSONModel+networking.m in Sources */,
 				FC3F03B31B90018A007EB2DE /* AFSecurityPolicy.m in Sources */,
 				FC3F03E61B90018A007EB2DE /* JSONModelError.m in Sources */,
 				FC3F03BF1B90018A007EB2DE /* AFNetworkActivityIndicatorManager.m in Sources */,
+				FC9139531BBA915100B4C64A /* HttpOperation.m in Sources */,
 				FC3F03AE1B90018A007EB2DE /* AFHTTPSessionManager.m in Sources */,
 				FC3F03F81B90018A007EB2DE /* RegexKitLite.m in Sources */,
 				FC3F03E41B90018A007EB2DE /* JSONModelClassProperty.m in Sources */,
@@ -814,12 +870,10 @@
 				FC3F03C71B90018A007EB2DE /* UIImageView+AFNetworking.m in Sources */,
 				FC3F04051B90051E007EB2DE /* NSData+PXTAES.m in Sources */,
 				FC3F03EB1B90018A007EB2DE /* JSONAPI.m in Sources */,
-				FC3F03F51B90018A007EB2DE /* README.md in Sources */,
 				FC3F04011B900515007EB2DE /* NSDate+TKCategory.m in Sources */,
 				FC3F03C51B90018A007EB2DE /* UIButton+AFNetworking.m in Sources */,
 				FC3F03CC1B90018A007EB2DE /* UIRefreshControl+AFNetworking.m in Sources */,
 				FC3F03CE1B90018A007EB2DE /* UIWebView+AFNetworking.m in Sources */,
-				FC3F03BD1B90018A007EB2DE /* README.md in Sources */,
 				FC3F03E01B90018A007EB2DE /* JSONModel.m in Sources */,
 				FC3F03B71B90018A007EB2DE /* AFURLRequestSerialization.m in Sources */,
 				FC3F03C11B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.m in Sources */,
