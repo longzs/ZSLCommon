@@ -27,9 +27,33 @@ typedef NSString* ServerInterfaceName;
 //身份信息验证
 #define k_URL_IsUserRegister              @"isUserRegister"
 
-typedef NS_ENUM (int, EData){
+/* 网络 */
+//状态码
+typedef NS_ENUM(NSInteger, HttpStatusCode)
+{
+    //成功
+    HttpStatusCodeSuccess = 1,
+    
+    //失败
+    HttpStatusCodeNetworkErr = -99999,
+    
+    //未成年人
+    HttpStatusCodeNoAdult = 1035,
+    
+    //查询排队不支持
+    HttpStatusCodeCheckQueueUnsupport = 1036,
+    
+    //查询排队超过工作时间
+    HttpStatusCodeCheckQueueOutTime = 1037,
+    
+    //用户未登录，登陆超时
+    HttpStatusCodeUnlogin = 9004,
+    
+    //登录异常，被挤下线
+    HttpStatusCodeLoginError = 9005
     
 };
+
 
 //医院支持的支付类型
 typedef NS_OPTIONS(NSUInteger, EOptionsType) {

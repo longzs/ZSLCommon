@@ -51,4 +51,5 @@
 
 @interface RspBaseModel : JSONModel<RspModelDBDelegate>
 
+
 @end

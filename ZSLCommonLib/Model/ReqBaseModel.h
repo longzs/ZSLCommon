@@ -77,10 +77,18 @@ typedef NS_ENUM(int, ResponseDataType){
  */
 -(NSMutableDictionary*)userInfoDictionary;
 
+/// 是否需要解密
+-(NSData*)decodeResponseData:(NSData*)responseData;
 
 //添加需要忽略上传的属性
 + (NSArray*)ignorePorpertyNames;
 
+#pragma mark - printLog
+-(void)printRequestSuccess;
+
+-(void)printRequestError;
+
+-(void)printResonse;
 
 #pragma mark - for old kept
 //相应的类型，默认为空

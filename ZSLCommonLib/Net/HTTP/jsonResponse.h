@@ -7,6 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONKit.h"
+#import "ZSLLibMacro.h"
+#import "TipString.h"
+
+#define kErrorCode      @"rspCode"
+#define kErrorMsg       @"rspMsg"
+#define kResponse       @"rspData"
 
 /**
  *  网络请求响应类

@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = FC78C7771B870E4200536535 /* Build configuration list for PBXAggregateTarget "MyAggregate" */;
 			buildPhases = (
-				FC78C77B1B870E7D00536535 /* ShellScript */,
+				FC78C77B1B870E7D00536535 /* Run Script */,
 			);
 			dependencies = (
 			);
@@ -110,6 +110,8 @@
 		FC78C7601B870A2900536535 /* ZSLCommonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = FC78C75F1B870A2900536535 /* ZSLCommonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC78C7661B870A2900536535 /* ZSLCommonLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78C75A1B870A2900536535 /* ZSLCommonLib.framework */; };
 		FC78C76D1B870A2900536535 /* ZSLCommonLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78C76C1B870A2900536535 /* ZSLCommonLibTests.m */; };
+		FC8492251BC4C69D0031DA56 /* jsonResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = FC8492231BC4C69D0031DA56 /* jsonResponse.h */; };
+		FC8492261BC4C69D0031DA56 /* jsonResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8492241BC4C69D0031DA56 /* jsonResponse.m */; };
 		FC91394A1BBA872A00B4C64A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3F03F91B9002D5007EB2DE /* libsqlite3.dylib */; };
 		FC91394D1BBA90DF00B4C64A /* ReqBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FC91394B1BBA90DF00B4C64A /* ReqBaseModel.h */; };
 		FC91394E1BBA90DF00B4C64A /* ReqBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC91394C1BBA90DF00B4C64A /* ReqBaseModel.m */; };
@@ -231,6 +233,8 @@
 		FC78C7651B870A2900536535 /* ZSLCommonLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSLCommonLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC78C76B1B870A2900536535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC78C76C1B870A2900536535 /* ZSLCommonLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSLCommonLibTests.m; sourceTree = "<group>"; };
+		FC8492231BC4C69D0031DA56 /* jsonResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonResponse.h; sourceTree = "<group>"; };
+		FC8492241BC4C69D0031DA56 /* jsonResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonResponse.m; sourceTree = "<group>"; };
 		FC91394B1BBA90DF00B4C64A /* ReqBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReqBaseModel.h; sourceTree = "<group>"; };
 		FC91394C1BBA90DF00B4C64A /* ReqBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReqBaseModel.m; sourceTree = "<group>"; };
 		FC9139501BBA915100B4C64A /* HttpOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpOperation.h; sourceTree = "<group>"; };
@@ -606,6 +610,8 @@
 		FC9E3B061B8F06D700D67A1A /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				FC8492231BC4C69D0031DA56 /* jsonResponse.h */,
+				FC8492241BC4C69D0031DA56 /* jsonResponse.m */,
 				FC9139501BBA915100B4C64A /* HttpOperation.h */,
 				FC9139511BBA915100B4C64A /* HttpOperation.m */,
 				FC9139541BBA91F100B4C64A /* ZSLHttpManager.h */,
@@ -651,6 +657,7 @@
 				FC3F03D31B90018A007EB2DE /* FMDatabasePool.h in Headers */,
 				FC3F03D11B90018A007EB2DE /* FMDatabaseAdditions.h in Headers */,
 				FC3F03C41B90018A007EB2DE /* UIButton+AFNetworking.h in Headers */,
+				FC8492251BC4C69D0031DA56 /* jsonResponse.h in Headers */,
 				FC3F03B21B90018A007EB2DE /* AFSecurityPolicy.h in Headers */,
 				FC91394D1BBA90DF00B4C64A /* ReqBaseModel.h in Headers */,
 				FCD1F2031BBB860C005FDB48 /* RspBaseModel.h in Headers */,
@@ -799,13 +806,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FC78C77B1B870E7D00536535 /* ShellScript */ = {
+		FC78C77B1B870E7D00536535 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -864,6 +872,7 @@
 				FC3F03BF1B90018A007EB2DE /* AFNetworkActivityIndicatorManager.m in Sources */,
 				FC9139531BBA915100B4C64A /* HttpOperation.m in Sources */,
 				FC3F03AE1B90018A007EB2DE /* AFHTTPSessionManager.m in Sources */,
+				FC8492261BC4C69D0031DA56 /* jsonResponse.m in Sources */,
 				FC3F03F81B90018A007EB2DE /* RegexKitLite.m in Sources */,
 				FC3F03E41B90018A007EB2DE /* JSONModelClassProperty.m in Sources */,
 				FC3F040E1B900EE0007EB2DE /* Utils_Zsl.m in Sources */,

@@ -52,6 +52,11 @@
     return [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:@"LogResult"];
 }
 
+-(NSData*)decodeResponseData:(NSData*)responseData{
+    
+    return nil;
+}
+
 + (BOOL)ignoreWithPorpertyName:(NSString *)propertyName properts:(NSArray*)properts
 {
     return [properts containsObject:propertyName];
@@ -59,6 +64,19 @@
 
 + (NSArray*)ignorePorpertyNames{
     return nil;
+}
+
+#pragma mark - printLog
+-(void)printRequestSuccess{
+    
+}
+
+-(void)printRequestError{
+    
+}
+
+-(void)printResonse{
+    
 }
 
 #pragma mark - old kept

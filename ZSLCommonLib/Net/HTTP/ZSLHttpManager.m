@@ -11,6 +11,7 @@
 
 
 @interface ZSLAFHTTPResponseSerializer : AFJSONResponseSerializer
+@property(nonatomic, strong)NSNumber* tag;
 @end
 
 @implementation ZSLAFHTTPResponseSerializer
@@ -28,14 +29,12 @@
 - (id)responseObjectForResponse:(NSURLResponse *)response
                            data:(NSData *)data
                           error:(NSError *__autoreleasing *)error{
-#if kUseAESEncode
-    NSData* decodeData = [HttpOperation decode:data];
-    //NSString *string = [[NSString alloc] initWithData:decodeData encoding:NSUTF8StringEncoding];
-    
-    return [super serializerResponseData:response data:decodeData error:error];
-#else
+    HttpOperation* hop = [ZSLHttpManager findOperationByTag:self.tag.intValue];
+    NSData* decodeData = [hop.reqModel decodeResponseData:data];
+    if (hop && nil != decodeData) {
+        return [super serializerResponseData:response data:decodeData error:error];
+    }
     return [super serializerResponseData:response data:data error:error];
-#endif
 }
 @end
 
@@ -170,16 +169,18 @@ typedef void (^afSuccessCallBack)(AFHTTPRequestOperation *operation, id response
 
 typedef void (^afFailureCallBack)(AFHTTPRequestOperation *operation, NSError *error);
 
+static NSMutableDictionary* g_dicOperations = nil;
+
 @interface ZSLHttpManager(){
     NSInteger iCmd;
     NSLock* lock_;
 }
 @property(nonatomic, strong)ZSLAFHttpOperationManager* operationManager;
-@property(nonatomic, strong)NSMutableDictionary* dicOperations;
+
 
 -(void)insertOperation:(HttpOperation*)hop;
 -(void)deleteOperationByTag:(int)iTag;
--(HttpOperation*)findOperationByTag:(int)iTag;
+
 @end
 
 @implementation ZSLHttpManager
@@ -193,8 +194,8 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
         self.operationManager = [ZSLAFHttpOperationManager manager];
         self.operationManager.requestSerializer.timeoutInterval = HTTP_TIMEOUT;
         //self.operationManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];//@"application/x-www-form-urlencoded",
-        
-        self.dicOperations = [NSMutableDictionary dictionaryWithCapacity:0];
+        [g_dicOperations removeAllObjects];
+        g_dicOperations = [[NSMutableDictionary alloc] initWithCapacity:0];
         lock_ = [[NSLock alloc] init];
     }
     return self;
@@ -220,7 +221,7 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
     afSuccessCallBack success = ^(AFHTTPRequestOperation *operation, id responseObject){
         ZSLAFHTTPRequestOperation* ef = (ZSLAFHTTPRequestOperation*)operation;
         
-        HttpOperation* hop = [weakSelf findOperationByTag:ef.tag.intValue];
+        HttpOperation* hop = [ZSLHttpManager findOperationByTag:ef.tag.intValue];
         
 #if k_RecordOperationTime
         hop.endDates = [NSDate date];
@@ -233,10 +234,10 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
             
             if (ResponseDataType_Json == [hop.reqModel responseDataType]) {
                 Class className = [hop.reqModel responseModelClass];
-                hop.jsonData = [jsonResponse initWithResponseDic:responseObject requestType:className];
+                hop.rspJsonData = [jsonResponse initWithResponseDic:responseObject requestType:className];
             }
             else{
-                hop.reciveData = [NSMutableData dataWithData:ef.responseData];
+                hop.responseData = [NSMutableData dataWithData:ef.responseData];
             }
             
 //            if (nil == hop.userInfo[kLogResult]
@@ -245,6 +246,7 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
 //                NSString* resStr = [[responseObject description] translateUnicode];
 //                DLog(@"\nHttpResonse Success : Method = %@ \r\n Content = %@", hop.serverMethod, (nil==resStr)?responseObject:resStr);
 //            }
+            [hop.reqModel printResonse];
             BOOL bContinue = YES;
             if (self.commonProcess) {
                 bContinue = self.commonProcess(hop);
@@ -259,7 +261,7 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
     afFailureCallBack failure = ^(AFHTTPRequestOperation *operation, NSError *error){
         ZSLAFHTTPRequestOperation* ef = (ZSLAFHTTPRequestOperation*)operation;
         
-        HttpOperation* hop = [weakSelf findOperationByTag:ef.tag.intValue];
+        HttpOperation* hop = [ZSLHttpManager findOperationByTag:ef.tag.intValue];
         if (hop) {
             hop.httpError = error;
             
@@ -267,8 +269,8 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
                 hop.responseBlock(hop);
             }
             
-            DLog(@"\nHttpResonse Error : Method = %@ url = %@ \r\n Error = %@", hop.serverMethod,ef.request.URL, ef.error);
-            
+            DLog(@"\nHttpResonse Error :url = %@ \r\n Error = %@", hop.serverMethod,ef.request.URL, ef.error);
+            [hop.reqModel printRequestError];
             [weakSelf deleteOperationByTag:ef.tag.intValue];
         }
     };
@@ -276,15 +278,12 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
     [lock_ lock];
     iCmd++;
     [lock_ unlock];
-    [SendMsg setMsgSessionId:(int)iCmd];
-    if (nil == SendMsg.requestHeader) {
-        SendMsg.requestHeader = [NSMutableDictionary dictionary];
-    }
-    SendMsg.httpMethod = method;
-    SendMsg.urlRequest = [self msgUrlRequest:SendMsg];
+    [SendMsg setRequestId:(int)iCmd];
+    
     ZSLAFHTTPRequestOperation* oper = [self.operationManager HttpRequestWithHttpOperation:SendMsg];
     [oper setCompletionBlockWithSuccess:success failure:failure];
     [oper setTag:@(iCmd)];
+    [((ZSLAFHTTPResponseSerializer*)oper.responseSerializer) setTag:@(iCmd)];
 #if k_RecordOperationTime
     SendMsg.beginDates = [NSDate date];
 #endif
@@ -292,19 +291,13 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
     
     [self.operationManager sentOperation:oper httpOperation:SendMsg];
     
-    DLog(@"\n----HttpRequest url = %@\r\n body = %@", SendMsg.urlRequest, [[NSString alloc] initWithData:[HttpOperation decode:SendMsg.postBody] encoding:NSUTF8StringEncoding]);
+    DLog(@"\n----HttpRequest url = %@\r\n body = %@", [SendMsg.reqModel requestURL], [[NSString alloc] initWithData:[HttpOperation decode:SendMsg.postBody] encoding:NSUTF8StringEncoding]);
+    [SendMsg.reqModel printRequestSuccess];
     return (int)iCmd;
 }
 
 -(NSString*)msgUrlRequest:(HttpOperation*)sendMsg{
-    NSString* ret = nil;
-    if (self.dicCoreService
-        && self.dicCoreService[sendMsg.serverMethod]) {
-        ret = [NSString stringWithFormat:@"%@%@", self.baseURLStr, self.dicCoreService[sendMsg.serverMethod]];
-    }
-    else{
-        ret = sendMsg.urlRequest.length?sendMsg.urlRequest:self.baseURLStr;
-    }
+    NSString* ret = [[sendMsg.reqModel requestURL] absoluteString];
     return ret;
 }
 
@@ -327,24 +320,22 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
 
 -(void)insertOperation:(HttpOperation*)hop{
     [lock_ lock];
-    [self.dicOperations setObject:hop forKey:@(hop.msgSessionId)];
+    [g_dicOperations setObject:hop forKey:@(hop.requestId)];
     [lock_ unlock];
 }
 
 -(void)deleteOperationByTag:(int)iTag{
     
-    if ([self.dicOperations objectForKey:@(iTag)]) {
+    if ([g_dicOperations objectForKey:@(iTag)]) {
         [lock_ lock];
-        [self.dicOperations removeObjectForKey:@(iTag)];
+        [g_dicOperations removeObjectForKey:@(iTag)];
         [lock_ unlock];
     }
 }
 
--(HttpOperation*)findOperationByTag:(int)iTag{
-    [lock_ lock];
-    HttpOperation* hop = [self.dicOperations objectForKey:@(iTag)];
-    [lock_ unlock];
++(HttpOperation*)findOperationByTag:(int)reqID{
     
+    HttpOperation* hop = [g_dicOperations objectForKey:@(reqID)];
     return hop;
 }
 
@@ -359,9 +350,9 @@ break;\
 
 -(void)cancelRequestFromQueuqByID:(int)reqID
 {
-    if (nil != [_dicOperations objectForKey:[NSNumber numberWithInt:reqID]]) {
+    if (nil != [g_dicOperations objectForKey:[NSNumber numberWithInt:reqID]]) {
         [lock_ lock];
-        [_dicOperations removeObjectForKey:[NSNumber numberWithInt:reqID]];
+        [g_dicOperations removeObjectForKey:[NSNumber numberWithInt:reqID]];
         [lock_ unlock];
     }
 }
@@ -374,6 +365,10 @@ break;\
 
 -(void)cancelAllRequest
 {
+    [lock_ lock];
+    [g_dicOperations removeAllObjects];
+    [self.operationManager.operationQueue cancelAllOperations];
+    [lock_ unlock];
 }
 
 @end

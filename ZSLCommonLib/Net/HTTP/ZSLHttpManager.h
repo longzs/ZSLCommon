@@ -45,4 +45,6 @@ DEFINE_SINGLETON_FOR_HEADER(ZSLHttpManager)
 -(void)CancelRequestByID:(int)ReqId;
 -(void)cancelAllRequest;
 
++(HttpOperation*)findOperationByTag:(int)reqID;
+
 @end

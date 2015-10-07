@@ -8,12 +8,6 @@
 
 #import "jsonResponse.h"
 #import "JSONModel.h"
-#import "JSONKit.h"
-
-#define kErrorCode      @"rspCode"
-#define kErrorMsg       @"rspMsg"
-#define kResponse       @"rspData"
-
 
 @implementation jsonResponse
 
