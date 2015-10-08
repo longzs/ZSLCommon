@@ -240,13 +240,8 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
                 hop.responseData = [NSMutableData dataWithData:ef.responseData];
             }
             
-//            if (nil == hop.userInfo[kLogResult]
-//                || [hop.userInfo[kLogResult] boolValue]
-//                ) {
-//                NSString* resStr = [[responseObject description] translateUnicode];
-//                DLog(@"\nHttpResonse Success : Method = %@ \r\n Content = %@", hop.serverMethod, (nil==resStr)?responseObject:resStr);
-//            }
-            [hop.reqModel printResonse];
+            [hop.reqModel printResonseData:responseObject];
+            
             BOOL bContinue = YES;
             if (self.commonProcess) {
                 bContinue = self.commonProcess(hop);
@@ -269,8 +264,7 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
                 hop.responseBlock(hop);
             }
             
-            DLog(@"\nHttpResonse Error :url = %@ \r\n Error = %@", hop.serverMethod,ef.request.URL, ef.error);
-            [hop.reqModel printRequestError];
+            [hop.reqModel printRequestError:error];
             [weakSelf deleteOperationByTag:ef.tag.intValue];
         }
     };
@@ -291,7 +285,6 @@ DEFINE_SINGLETON_FOR_CLASS(ZSLHttpManager)
     
     [self.operationManager sentOperation:oper httpOperation:SendMsg];
     
-    DLog(@"\n----HttpRequest url = %@\r\n body = %@", [SendMsg.reqModel requestURL], [[NSString alloc] initWithData:[HttpOperation decode:SendMsg.postBody] encoding:NSUTF8StringEncoding]);
     [SendMsg.reqModel printRequestSuccess];
     return (int)iCmd;
 }

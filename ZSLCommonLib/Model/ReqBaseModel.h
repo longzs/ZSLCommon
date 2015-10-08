@@ -8,6 +8,11 @@
 
 #import "JSONModel.h"
 #import "RspBaseModel.h"
+#import "NSString+NetToolSet.h"
+#import "CommonMacro.h"
+#import "ZSLEncrypt.h"
+#import "ZSLLibMacro.h"
+#import "TipString.h"
 
 typedef NSString* HttpMethod;
 
@@ -86,9 +91,9 @@ typedef NS_ENUM(int, ResponseDataType){
 #pragma mark - printLog
 -(void)printRequestSuccess;
 
--(void)printRequestError;
+-(void)printRequestError:(NSError*)error;
 
--(void)printResonse;
+-(void)printResonseData:(NSData*)data;
 
 #pragma mark - for old kept
 //相应的类型，默认为空

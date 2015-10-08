@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ReqBaseModel.h"
 #import "ReqUploadModel.h"
-#import "CommonMacro.h"
 #import "jsonResponse.h"
 
 @class HttpOperation;
@@ -31,6 +30,9 @@ typedef void (^ZSLHttpCallBack) (HttpOperation* httpOperation);
 //  http 返回码(eg:200)
 @property(nonatomic, strong)NSError*             httpError;
 
-+(HttpOperation*)httpOperationWithRequestModel:(ReqBaseModel*)reqModel;
+
+-(BOOL)isNetWorkOK;
+
++(HttpOperation*)httpOperationWithRequestModel:(ReqBaseModel*)reqModel responseBlock:(ZSLHttpCallBack)responseBlock;
 
 @end

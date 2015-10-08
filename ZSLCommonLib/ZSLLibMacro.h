@@ -19,6 +19,8 @@
 // IOS 平台ID
 #define k_PlatID_IOS                     @"01"
 
+#define k_ProductId_xxx                     @"01"
+
 typedef NSString* ServerInterfaceName;
 
 //用户打开终端时，由终端调用该接口

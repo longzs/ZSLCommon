@@ -38,11 +38,6 @@
     return [RspBaseModel class];
 }
 
--(NSData*)postHttpBody{
-    
-    return nil;
-}
-
 -(ResponseDataType)responseDataType{
     
     return ResponseDataType_Json;
@@ -52,9 +47,17 @@
     return [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:@"LogResult"];
 }
 
+-(NSData*)postHttpBody{
+    
+    NSString* jsonStr = [self toJSONString];
+    NSString* encodeStr = [NSString stringWithFormat:@"productId=%@&pltId=%@&version=%@&paramMethod=%@&paramContent=%@", k_ProductId_xxx,k_PlatID_IOS,VERSION_APP_STRING,[self serverInterfaceName], nil==jsonStr?@"":jsonStr];
+    
+    return [ZSLEncrypt encryptAESData:encodeStr app_key:kAESKey];
+}
+
 -(NSData*)decodeResponseData:(NSData*)responseData{
     
-    return nil;
+    return [ZSLEncrypt decryptAESData:responseData app_key:kAESKey];
 }
 
 + (BOOL)ignoreWithPorpertyName:(NSString *)propertyName properts:(NSArray*)properts
@@ -68,15 +71,16 @@
 
 #pragma mark - printLog
 -(void)printRequestSuccess{
-    
+    DLog(@"\n----HttpRequest url = %@\r\n body = %@", [self requestURL], [self toJSONString]);
 }
 
--(void)printRequestError{
-    
+-(void)printRequestError:(NSError*)error{
+    DLog(@"\nHttpResonse Error : Method = %@ url = %@ \r\n Error = %@", [self serverInterfaceName],[self requestURL], error);
 }
 
--(void)printResonse{
-    
+-(void)printResonseData:(NSData*)data{
+    NSString* resStr = [[data description] translateUnicode];
+    DLog(@"\nHttpResonse Success : Method = %@ \r\n Content = %@", [self serverInterfaceName], (nil==resStr)?data:resStr);
 }
 
 #pragma mark - old kept

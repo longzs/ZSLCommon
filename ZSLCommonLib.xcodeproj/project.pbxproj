@@ -126,6 +126,10 @@
 		FCD1F2041BBB860C005FDB48 /* RspBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1F2021BBB860C005FDB48 /* RspBaseModel.m */; };
 		FCD1F2071BBBBCDB005FDB48 /* ReqUploadModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FCD1F2051BBBBCDB005FDB48 /* ReqUploadModel.h */; };
 		FCD1F2081BBBBCDB005FDB48 /* ReqUploadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1F2061BBBBCDB005FDB48 /* ReqUploadModel.m */; };
+		FCDAB00D1BC6194800A6F2FB /* ZSLEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = FCDAB00B1BC6194800A6F2FB /* ZSLEncrypt.h */; };
+		FCDAB00E1BC6194800A6F2FB /* ZSLEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDAB00C1BC6194800A6F2FB /* ZSLEncrypt.m */; };
+		FCDAB0111BC6201100A6F2FB /* DBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FCDAB00F1BC6201100A6F2FB /* DBManager.h */; };
+		FCDAB0121BC6201100A6F2FB /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDAB0101BC6201100A6F2FB /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,6 +253,10 @@
 		FCD1F2021BBB860C005FDB48 /* RspBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RspBaseModel.m; sourceTree = "<group>"; };
 		FCD1F2051BBBBCDB005FDB48 /* ReqUploadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReqUploadModel.h; sourceTree = "<group>"; };
 		FCD1F2061BBBBCDB005FDB48 /* ReqUploadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReqUploadModel.m; sourceTree = "<group>"; };
+		FCDAB00B1BC6194800A6F2FB /* ZSLEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSLEncrypt.h; sourceTree = "<group>"; };
+		FCDAB00C1BC6194800A6F2FB /* ZSLEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSLEncrypt.m; sourceTree = "<group>"; };
+		FCDAB00F1BC6201100A6F2FB /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		FCDAB0101BC6201100A6F2FB /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,6 +468,8 @@
 			children = (
 				FC3F04021B90051E007EB2DE /* NSData+PXTAES.h */,
 				FC3F04031B90051E007EB2DE /* NSData+PXTAES.m */,
+				FCDAB00B1BC6194800A6F2FB /* ZSLEncrypt.h */,
+				FCDAB00C1BC6194800A6F2FB /* ZSLEncrypt.m */,
 			);
 			path = NSData;
 			sourceTree = "<group>";
@@ -574,6 +584,8 @@
 			children = (
 				FC9E3B0F1B8F163C00D67A1A /* BaseManager.h */,
 				FC9E3B101B8F163C00D67A1A /* BaseManager.m */,
+				FCDAB00F1BC6201100A6F2FB /* DBManager.h */,
+				FCDAB0101BC6201100A6F2FB /* DBManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -664,6 +676,7 @@
 				FC3F03F01B90018A007EB2DE /* JSONKeyMapper.h in Headers */,
 				FC3F04041B90051E007EB2DE /* NSData+PXTAES.h in Headers */,
 				FC3F03AF1B90018A007EB2DE /* AFNetworking.h in Headers */,
+				FCDAB0111BC6201100A6F2FB /* DBManager.h in Headers */,
 				FC3F03F21B90018A007EB2DE /* JSONValueTransformer.h in Headers */,
 				FC3F03B01B90018A007EB2DE /* AFNetworkReachabilityManager.h in Headers */,
 				FC3F04081B900529007EB2DE /* NSString+NetToolSet.h in Headers */,
@@ -700,6 +713,7 @@
 				FC3F03E71B90018A007EB2DE /* NSArray+JSONModel.h in Headers */,
 				FC3F03A91B90018A007EB2DE /* AFHTTPRequestOperation.h in Headers */,
 				FC3F03CD1B90018A007EB2DE /* UIWebView+AFNetworking.h in Headers */,
+				FCDAB00D1BC6194800A6F2FB /* ZSLEncrypt.h in Headers */,
 				FC3F03EA1B90018A007EB2DE /* JSONAPI.h in Headers */,
 				FC3F03B41B90018A007EB2DE /* AFURLConnectionOperation.h in Headers */,
 				FC3F03C91B90018A007EB2DE /* UIProgressView+AFNetworking.h in Headers */,
@@ -876,8 +890,10 @@
 				FC3F03F81B90018A007EB2DE /* RegexKitLite.m in Sources */,
 				FC3F03E41B90018A007EB2DE /* JSONModelClassProperty.m in Sources */,
 				FC3F040E1B900EE0007EB2DE /* Utils_Zsl.m in Sources */,
+				FCDAB00E1BC6194800A6F2FB /* ZSLEncrypt.m in Sources */,
 				FC3F03C71B90018A007EB2DE /* UIImageView+AFNetworking.m in Sources */,
 				FC3F04051B90051E007EB2DE /* NSData+PXTAES.m in Sources */,
+				FCDAB0121BC6201100A6F2FB /* DBManager.m in Sources */,
 				FC3F03EB1B90018A007EB2DE /* JSONAPI.m in Sources */,
 				FC3F04011B900515007EB2DE /* NSDate+TKCategory.m in Sources */,
 				FC3F03C51B90018A007EB2DE /* UIButton+AFNetworking.m in Sources */,
