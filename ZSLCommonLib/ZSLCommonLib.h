@@ -17,5 +17,6 @@ FOUNDATION_EXPORT const unsigned char ZSLCommonLibVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <ZSLCommonLib/PublicHeader.h>
 
 
-#import <<ZSLCommonLib/CommonMacro.h>
-#import "CommonMacro.h"
+#import <ZSLCommonLib/CommonMacro.h>
+#import <ZSLCommonLib/BaseManager.h>
+#import <ZSLCommonLib/Utils_Zsl.h>
