@@ -21,87 +21,87 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		FC3F03A91B90018A007EB2DE /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F034E1B90018A007EB2DE /* AFHTTPRequestOperation.h */; };
+		FC3F03A91B90018A007EB2DE /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F034E1B90018A007EB2DE /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03AA1B90018A007EB2DE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F034F1B90018A007EB2DE /* AFHTTPRequestOperation.m */; };
-		FC3F03AB1B90018A007EB2DE /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03501B90018A007EB2DE /* AFHTTPRequestOperationManager.h */; };
+		FC3F03AB1B90018A007EB2DE /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03501B90018A007EB2DE /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03AC1B90018A007EB2DE /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03511B90018A007EB2DE /* AFHTTPRequestOperationManager.m */; };
-		FC3F03AD1B90018A007EB2DE /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03521B90018A007EB2DE /* AFHTTPSessionManager.h */; };
+		FC3F03AD1B90018A007EB2DE /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03521B90018A007EB2DE /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03AE1B90018A007EB2DE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03531B90018A007EB2DE /* AFHTTPSessionManager.m */; };
-		FC3F03AF1B90018A007EB2DE /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03541B90018A007EB2DE /* AFNetworking.h */; };
-		FC3F03B01B90018A007EB2DE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03551B90018A007EB2DE /* AFNetworkReachabilityManager.h */; };
+		FC3F03AF1B90018A007EB2DE /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03541B90018A007EB2DE /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3F03B01B90018A007EB2DE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03551B90018A007EB2DE /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03B11B90018A007EB2DE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03561B90018A007EB2DE /* AFNetworkReachabilityManager.m */; };
-		FC3F03B21B90018A007EB2DE /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03571B90018A007EB2DE /* AFSecurityPolicy.h */; };
+		FC3F03B21B90018A007EB2DE /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03571B90018A007EB2DE /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03B31B90018A007EB2DE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03581B90018A007EB2DE /* AFSecurityPolicy.m */; };
-		FC3F03B41B90018A007EB2DE /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03591B90018A007EB2DE /* AFURLConnectionOperation.h */; };
+		FC3F03B41B90018A007EB2DE /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03591B90018A007EB2DE /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FC3F03B51B90018A007EB2DE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F035A1B90018A007EB2DE /* AFURLConnectionOperation.m */; };
-		FC3F03B61B90018A007EB2DE /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F035B1B90018A007EB2DE /* AFURLRequestSerialization.h */; };
+		FC3F03B61B90018A007EB2DE /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F035B1B90018A007EB2DE /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03B71B90018A007EB2DE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F035C1B90018A007EB2DE /* AFURLRequestSerialization.m */; };
-		FC3F03B81B90018A007EB2DE /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F035D1B90018A007EB2DE /* AFURLResponseSerialization.h */; };
+		FC3F03B81B90018A007EB2DE /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F035D1B90018A007EB2DE /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03B91B90018A007EB2DE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F035E1B90018A007EB2DE /* AFURLResponseSerialization.m */; };
-		FC3F03BA1B90018A007EB2DE /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F035F1B90018A007EB2DE /* AFURLSessionManager.h */; };
+		FC3F03BA1B90018A007EB2DE /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F035F1B90018A007EB2DE /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03BB1B90018A007EB2DE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03601B90018A007EB2DE /* AFURLSessionManager.m */; };
 		FC3F03BC1B90018A007EB2DE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FC3F03611B90018A007EB2DE /* LICENSE */; };
-		FC3F03BE1B90018A007EB2DE /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03641B90018A007EB2DE /* AFNetworkActivityIndicatorManager.h */; };
+		FC3F03BE1B90018A007EB2DE /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03641B90018A007EB2DE /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03BF1B90018A007EB2DE /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03651B90018A007EB2DE /* AFNetworkActivityIndicatorManager.m */; };
-		FC3F03C01B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03661B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.h */; };
+		FC3F03C01B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03661B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03C11B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03671B90018A007EB2DE /* UIActivityIndicatorView+AFNetworking.m */; };
-		FC3F03C21B90018A007EB2DE /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03681B90018A007EB2DE /* UIAlertView+AFNetworking.h */; };
+		FC3F03C21B90018A007EB2DE /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03681B90018A007EB2DE /* UIAlertView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03C31B90018A007EB2DE /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03691B90018A007EB2DE /* UIAlertView+AFNetworking.m */; };
-		FC3F03C41B90018A007EB2DE /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F036A1B90018A007EB2DE /* UIButton+AFNetworking.h */; };
+		FC3F03C41B90018A007EB2DE /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F036A1B90018A007EB2DE /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03C51B90018A007EB2DE /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F036B1B90018A007EB2DE /* UIButton+AFNetworking.m */; };
-		FC3F03C61B90018A007EB2DE /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F036C1B90018A007EB2DE /* UIImageView+AFNetworking.h */; };
+		FC3F03C61B90018A007EB2DE /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F036C1B90018A007EB2DE /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03C71B90018A007EB2DE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F036D1B90018A007EB2DE /* UIImageView+AFNetworking.m */; };
-		FC3F03C81B90018A007EB2DE /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F036E1B90018A007EB2DE /* UIKit+AFNetworking.h */; };
-		FC3F03C91B90018A007EB2DE /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F036F1B90018A007EB2DE /* UIProgressView+AFNetworking.h */; };
+		FC3F03C81B90018A007EB2DE /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F036E1B90018A007EB2DE /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3F03C91B90018A007EB2DE /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F036F1B90018A007EB2DE /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03CA1B90018A007EB2DE /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03701B90018A007EB2DE /* UIProgressView+AFNetworking.m */; };
-		FC3F03CB1B90018A007EB2DE /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03711B90018A007EB2DE /* UIRefreshControl+AFNetworking.h */; };
+		FC3F03CB1B90018A007EB2DE /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03711B90018A007EB2DE /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03CC1B90018A007EB2DE /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03721B90018A007EB2DE /* UIRefreshControl+AFNetworking.m */; };
-		FC3F03CD1B90018A007EB2DE /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03731B90018A007EB2DE /* UIWebView+AFNetworking.h */; };
+		FC3F03CD1B90018A007EB2DE /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03731B90018A007EB2DE /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03CE1B90018A007EB2DE /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03741B90018A007EB2DE /* UIWebView+AFNetworking.m */; };
-		FC3F03CF1B90018A007EB2DE /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03761B90018A007EB2DE /* FMDatabase.h */; };
+		FC3F03CF1B90018A007EB2DE /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03761B90018A007EB2DE /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03D01B90018A007EB2DE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03771B90018A007EB2DE /* FMDatabase.m */; };
-		FC3F03D11B90018A007EB2DE /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03781B90018A007EB2DE /* FMDatabaseAdditions.h */; };
+		FC3F03D11B90018A007EB2DE /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03781B90018A007EB2DE /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03D21B90018A007EB2DE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03791B90018A007EB2DE /* FMDatabaseAdditions.m */; };
-		FC3F03D31B90018A007EB2DE /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F037A1B90018A007EB2DE /* FMDatabasePool.h */; };
+		FC3F03D31B90018A007EB2DE /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F037A1B90018A007EB2DE /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03D41B90018A007EB2DE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F037B1B90018A007EB2DE /* FMDatabasePool.m */; };
-		FC3F03D51B90018A007EB2DE /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F037C1B90018A007EB2DE /* FMDatabaseQueue.h */; };
+		FC3F03D51B90018A007EB2DE /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F037C1B90018A007EB2DE /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03D61B90018A007EB2DE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F037D1B90018A007EB2DE /* FMDatabaseQueue.m */; };
-		FC3F03D71B90018A007EB2DE /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F037E1B90018A007EB2DE /* FMDB.h */; };
-		FC3F03D81B90018A007EB2DE /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F037F1B90018A007EB2DE /* FMResultSet.h */; };
+		FC3F03D71B90018A007EB2DE /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F037E1B90018A007EB2DE /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3F03D81B90018A007EB2DE /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F037F1B90018A007EB2DE /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03D91B90018A007EB2DE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03801B90018A007EB2DE /* FMResultSet.m */; };
-		FC3F03DA1B90018A007EB2DE /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03821B90018A007EB2DE /* GTMBase64.h */; };
+		FC3F03DA1B90018A007EB2DE /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03821B90018A007EB2DE /* GTMBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03DB1B90018A007EB2DE /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03831B90018A007EB2DE /* GTMBase64.m */; };
-		FC3F03DC1B90018A007EB2DE /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03841B90018A007EB2DE /* GTMDefines.h */; };
-		FC3F03DD1B90018A007EB2DE /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03861B90018A007EB2DE /* JSONKit.h */; };
+		FC3F03DC1B90018A007EB2DE /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03841B90018A007EB2DE /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3F03DD1B90018A007EB2DE /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03861B90018A007EB2DE /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03DE1B90018A007EB2DE /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03871B90018A007EB2DE /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FC3F03DF1B90018A007EB2DE /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F038B1B90018A007EB2DE /* JSONModel.h */; };
+		FC3F03DF1B90018A007EB2DE /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F038B1B90018A007EB2DE /* JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03E01B90018A007EB2DE /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F038C1B90018A007EB2DE /* JSONModel.m */; };
-		FC3F03E11B90018A007EB2DE /* JSONModelArray.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F038D1B90018A007EB2DE /* JSONModelArray.h */; };
+		FC3F03E11B90018A007EB2DE /* JSONModelArray.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F038D1B90018A007EB2DE /* JSONModelArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03E21B90018A007EB2DE /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F038E1B90018A007EB2DE /* JSONModelArray.m */; };
-		FC3F03E31B90018A007EB2DE /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F038F1B90018A007EB2DE /* JSONModelClassProperty.h */; };
+		FC3F03E31B90018A007EB2DE /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F038F1B90018A007EB2DE /* JSONModelClassProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03E41B90018A007EB2DE /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03901B90018A007EB2DE /* JSONModelClassProperty.m */; };
-		FC3F03E51B90018A007EB2DE /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03911B90018A007EB2DE /* JSONModelError.h */; };
+		FC3F03E51B90018A007EB2DE /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03911B90018A007EB2DE /* JSONModelError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03E61B90018A007EB2DE /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03921B90018A007EB2DE /* JSONModelError.m */; };
-		FC3F03E71B90018A007EB2DE /* NSArray+JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03941B90018A007EB2DE /* NSArray+JSONModel.h */; };
+		FC3F03E71B90018A007EB2DE /* NSArray+JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03941B90018A007EB2DE /* NSArray+JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03E81B90018A007EB2DE /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03951B90018A007EB2DE /* NSArray+JSONModel.m */; };
-		FC3F03E91B90018A007EB2DE /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03961B90018A007EB2DE /* JSONModelLib.h */; };
-		FC3F03EA1B90018A007EB2DE /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03981B90018A007EB2DE /* JSONAPI.h */; };
+		FC3F03E91B90018A007EB2DE /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03961B90018A007EB2DE /* JSONModelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3F03EA1B90018A007EB2DE /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03981B90018A007EB2DE /* JSONAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03EB1B90018A007EB2DE /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03991B90018A007EB2DE /* JSONAPI.m */; };
-		FC3F03EC1B90018A007EB2DE /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F039A1B90018A007EB2DE /* JSONHTTPClient.h */; };
+		FC3F03EC1B90018A007EB2DE /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F039A1B90018A007EB2DE /* JSONHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03ED1B90018A007EB2DE /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F039B1B90018A007EB2DE /* JSONHTTPClient.m */; };
-		FC3F03EE1B90018A007EB2DE /* JSONModel+networking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F039C1B90018A007EB2DE /* JSONModel+networking.h */; };
+		FC3F03EE1B90018A007EB2DE /* JSONModel+networking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F039C1B90018A007EB2DE /* JSONModel+networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03EF1B90018A007EB2DE /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F039D1B90018A007EB2DE /* JSONModel+networking.m */; };
-		FC3F03F01B90018A007EB2DE /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F039F1B90018A007EB2DE /* JSONKeyMapper.h */; };
+		FC3F03F01B90018A007EB2DE /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F039F1B90018A007EB2DE /* JSONKeyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03F11B90018A007EB2DE /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03A01B90018A007EB2DE /* JSONKeyMapper.m */; };
-		FC3F03F21B90018A007EB2DE /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03A11B90018A007EB2DE /* JSONValueTransformer.h */; };
+		FC3F03F21B90018A007EB2DE /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03A11B90018A007EB2DE /* JSONValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03F31B90018A007EB2DE /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03A21B90018A007EB2DE /* JSONValueTransformer.m */; };
 		FC3F03F41B90018A007EB2DE /* LICENSE_jsonmodel.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC3F03A31B90018A007EB2DE /* LICENSE_jsonmodel.txt */; };
-		FC3F03F61B90018A007EB2DE /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03A61B90018A007EB2DE /* RegexKitLite.h */; };
+		FC3F03F61B90018A007EB2DE /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03A61B90018A007EB2DE /* RegexKitLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F03F71B90018A007EB2DE /* RegexKitLite.html in Resources */ = {isa = PBXBuildFile; fileRef = FC3F03A71B90018A007EB2DE /* RegexKitLite.html */; };
 		FC3F03F81B90018A007EB2DE /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03A81B90018A007EB2DE /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FC3F04001B900515007EB2DE /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03FE1B900515007EB2DE /* NSDate+TKCategory.h */; };
+		FC3F04001B900515007EB2DE /* NSDate+TKCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F03FE1B900515007EB2DE /* NSDate+TKCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F04011B900515007EB2DE /* NSDate+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F03FF1B900515007EB2DE /* NSDate+TKCategory.m */; };
-		FC3F04041B90051E007EB2DE /* NSData+PXTAES.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F04021B90051E007EB2DE /* NSData+PXTAES.h */; };
+		FC3F04041B90051E007EB2DE /* NSData+PXTAES.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F04021B90051E007EB2DE /* NSData+PXTAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F04051B90051E007EB2DE /* NSData+PXTAES.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F04031B90051E007EB2DE /* NSData+PXTAES.m */; };
 		FC3F04081B900529007EB2DE /* NSString+NetToolSet.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F04061B900529007EB2DE /* NSString+NetToolSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC3F04091B900529007EB2DE /* NSString+NetToolSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F04071B900529007EB2DE /* NSString+NetToolSet.m */; };
@@ -117,7 +117,7 @@
 		FC91394E1BBA90DF00B4C64A /* ReqBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC91394C1BBA90DF00B4C64A /* ReqBaseModel.m */; };
 		FC9139521BBA915100B4C64A /* HttpOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9139501BBA915100B4C64A /* HttpOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC9139531BBA915100B4C64A /* HttpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9139511BBA915100B4C64A /* HttpOperation.m */; };
-		FC9139561BBA91F100B4C64A /* ZSLHttpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9139541BBA91F100B4C64A /* ZSLHttpManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FC9139561BBA91F100B4C64A /* ZSLHttpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9139541BBA91F100B4C64A /* ZSLHttpManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC9139571BBA91F100B4C64A /* ZSLHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9139551BBA91F100B4C64A /* ZSLHttpManager.m */; };
 		FC9E3B0B1B8F0C0A00D67A1A /* CommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9E3B0A1B8F0C0A00D67A1A /* CommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC9E3B111B8F163C00D67A1A /* BaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9E3B0F1B8F163C00D67A1A /* BaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -666,7 +666,6 @@
 				FC9E3B111B8F163C00D67A1A /* BaseManager.h in Headers */,
 				FC3F04081B900529007EB2DE /* NSString+NetToolSet.h in Headers */,
 				FC9139521BBA915100B4C64A /* HttpOperation.h in Headers */,
-				FC3F03C61B90018A007EB2DE /* UIImageView+AFNetworking.h in Headers */,
 				FC8492251BC4C69D0031DA56 /* jsonResponse.h in Headers */,
 				FCD1F2031BBB860C005FDB48 /* RspBaseModel.h in Headers */,
 				FC3F040D1B900EE0007EB2DE /* Utils_Zsl.h in Headers */,
@@ -674,7 +673,7 @@
 				FCD1F2071BBBBCDB005FDB48 /* ReqUploadModel.h in Headers */,
 				FC91394D1BBA90DF00B4C64A /* ReqBaseModel.h in Headers */,
 				FCDAB00D1BC6194800A6F2FB /* ZSLEncrypt.h in Headers */,
-				FC9139561BBA91F100B4C64A /* ZSLHttpManager.h in Headers */,
+				FC3F03C61B90018A007EB2DE /* UIImageView+AFNetworking.h in Headers */,
 				FC3F03D81B90018A007EB2DE /* FMResultSet.h in Headers */,
 				FC3F03EE1B90018A007EB2DE /* JSONModel+networking.h in Headers */,
 				FC3F03B61B90018A007EB2DE /* AFURLRequestSerialization.h in Headers */,
@@ -698,7 +697,6 @@
 				FC3F03BA1B90018A007EB2DE /* AFURLSessionManager.h in Headers */,
 				FC3F03AB1B90018A007EB2DE /* AFHTTPRequestOperationManager.h in Headers */,
 				FC3F03BE1B90018A007EB2DE /* AFNetworkActivityIndicatorManager.h in Headers */,
-				FC78C7601B870A2900536535 /* ZSLCommonLib.h in Headers */,
 				FC3F03CB1B90018A007EB2DE /* UIRefreshControl+AFNetworking.h in Headers */,
 				FC3F03C21B90018A007EB2DE /* UIAlertView+AFNetworking.h in Headers */,
 				FC3F03E91B90018A007EB2DE /* JSONModelLib.h in Headers */,
@@ -715,8 +713,10 @@
 				FC3F03A91B90018A007EB2DE /* AFHTTPRequestOperation.h in Headers */,
 				FC3F03CD1B90018A007EB2DE /* UIWebView+AFNetworking.h in Headers */,
 				FC3F03EA1B90018A007EB2DE /* JSONAPI.h in Headers */,
-				FC3F03B41B90018A007EB2DE /* AFURLConnectionOperation.h in Headers */,
 				FC3F03C91B90018A007EB2DE /* UIProgressView+AFNetworking.h in Headers */,
+				FC9139561BBA91F100B4C64A /* ZSLHttpManager.h in Headers */,
+				FC78C7601B870A2900536535 /* ZSLCommonLib.h in Headers */,
+				FC3F03B41B90018A007EB2DE /* AFURLConnectionOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

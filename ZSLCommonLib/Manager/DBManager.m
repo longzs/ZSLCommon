@@ -7,6 +7,7 @@
 //
 
 #import "DBManager.h"
+#import "FMDB.h"
 
 @implementation DBManager
 

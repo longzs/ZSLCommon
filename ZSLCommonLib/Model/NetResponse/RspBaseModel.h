@@ -7,7 +7,7 @@
 //
 
 #import "JSONModel.h"
-#import "FMDB.h"
+
 
 #pragma mark - 数据模型协议
 /**
@@ -37,7 +37,7 @@
  *
  *  @return 实例
  */
-+ (instancetype)instanceFromResultSet:(FMResultSet *)set;
++ (instancetype)instanceFromResultSet:(NSDictionary *)set;
 
 /**
  *  所有属性对应的数据库中的字段

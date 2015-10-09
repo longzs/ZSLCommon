@@ -7,6 +7,7 @@
 //
 
 #import "RspBaseModel.h"
+#import "FMDB.h"
 
 @implementation RspBaseModel
 
